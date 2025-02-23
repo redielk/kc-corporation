@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KC Corporation - Processo Seletivo Elite 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-background {
+            background: linear-gradient(to bottom, #020617, #172554, #020617);
+        }
+        
+        .form-input, .form-textarea {
+            background-color: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(30, 58, 138, 0.5);
+            color: #e2e8f0;
+        }
+        
+        .form-input:focus, .form-textarea:focus {
+            border-color: #1d4ed8;
+            box-shadow: 0 0 0 1px #1d4ed8;
+            outline: none;
+        }
+
+        .radio-group-item {
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            border: 2px solid #60a5fa;
+            appearance: none;
+            -webkit-appearance: none;
+            margin-right: 0.5rem;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .radio-group-item:checked::after {
+            content: '';
+            width: 0.5rem;
+            height: 0.5rem;
+            background-color: #60a5fa;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body class="gradient-background min-h-screen py-12 px-4">
+    <div class="max-w-3xl mx-auto">
+        <!-- Logo Section -->
+        <div class="flex flex-col items-center mb-8">
+            <div class="flex items-center gap-4 bg-slate-950 p-6 rounded-xl w-full border border-blue-800/30 shadow-lg">
+                <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center shadow-inner">
+                    <span class="text-blue-950 text-2xl font-bold tracking-wider">KC</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-blue-100 text-2xl tracking-wider font-semibold">CORPORATION</span>
+                    <span class="text-blue-300 text-sm">serviços digitais premium</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Card -->
+        <div class="backdrop-blur-lg bg-slate-950/90 border border-blue-800/30 shadow-2xl rounded-xl">
+            <div class="text-center space-y-6 p-8">
+                <h1 class="text-3xl font-bold text-blue-100 mb-2">
+                    Processo Seletivo Elite 2025
+                </h1>
+                <div class="space-y-3">
+                    <p class="text-blue-300 text-xl font-semibold">
+                        Programa de Consultoria Empresarial Premium
+                    </p>
+                    <p class="text-gray-400 text-base font-medium">
+                        Apenas 10 vagas disponíveis para empresários visionários comprometidos com resultados extraordinários
+                    </p>
+                </div>
+            </div>
+
+            <!-- Form Content -->
+            <div class="p-8">
+                <!-- IMPORTANTE: Substitua seu-email@email.com pelo seu email real -->
+                <form id="leadForm" action="https://formsubmit.co/kccorporationoficial@gmail.com" method="POST">
+                    class="space-y-8">
+                    <!-- Campos ocultos para configuração do FormSubmit -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="/pagina-agradecimento.html">
+
+                    <!-- Seção 1: Sobre a Empresa -->
+                    <div class="space-y-4">
+                        <h2 class="text-xl font-semibold text-blue-200">1. Sobre a Empresa</h2>
+                        <div class="space-y-2">
+                            <label class="block text-blue-100">Nome da empresa</label>
+                            <input required name="nomeEmpresa" class="form-input w-full rounded-md p-2" />
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block text-blue-100">Segmento de atuação</label>
+                            <input required name="segmento" class="form-input w-full rounded-md p-2" />
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block text-blue-100">Tempo no mercado</label>
+                            <input required name="tempoMercado" class="form-input w-full rounded-md p-2" />
+                        </div>
+                    </div>
+
+                    <!-- Seção 2: Faturamento e Investimento -->
+                    <div class="space-y-4">
+                        <h2 class="text-xl font-semibold text-blue-200">2. Faturamento e Investimento</h2>
+                        <div class="space-y-2">
+                            <label class="block text-blue-100">Faturamento médio mensal</label>
+                            <div class="space-y-2">
+                                <div class="flex items-center">
+                                    <input type="radio" name="faturamento" value="Menos de R$10 mil" class="radio-group-item" required>
+                                    <label class="text-gray-300">Menos de R$10 mil</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="radio" name="faturamento" value="Entre R$10 mil e R$50 mil" class="radio-group-item">
+                                    <label class="text-gray-300">Entre R$10 mil e R$50 mil</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="radio" name="faturamento" value="Entre R$50 mil e R$200 mil" class="radio-group-item">
+                                    <label class="text-gray-300">Entre R$50 mil e R$200 mil</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="radio" name="faturamento" value="Acima de R$200 mil" class="radio-group-item">
+                                    <label class="text-gray-300">Acima de R$200 mil</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="block text-blue-100">Investimento disposto a fazer</label>
+                            <div class="space-y-2">
+                                <div class="flex items-center">
+                                    <input type="radio" name="investimento" value="Menos de R$1.000" class="radio-group-item" required>
+                                    <label class="text-gray-300">Menos de R$1.000</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="radio" name="investimento" value="Entre R$1.000 e R$5.000" class="radio-group-item">
+                                    <label class="text-gray-300">Entre R$1.000 e R$5.000</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="radio" name="investimento" value="Entre R$5.000 e R$10.000" class="radio-group-item">
+                                    <label class="text-gray-300">Entre R$5.000 e R$10.000</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="radio" name="investimento" value="Acima de R$10.000" class="radio-group-item">
+                                    <label class="text-gray-300">Acima de R$10.000</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Seção 3: Contato -->
+                    <div class="space-y-4">
+                        <h2 class="text-xl font-semibold text-blue-200">3. Informações de Contato</h2>
+                        <div class="space-y-2">
+                            <label class="block text-blue-100">Nome completo</label>
+                            <input required name="nomeCompleto" class="form-input w-full rounded-md p-2" />
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block text-blue-100">WhatsApp ou telefone</label>
+                            <input required name="telefone" type="tel" class="form-input w-full rounded-md p-2" />
+                        </div>
+                    </div>
+
+                    <button 
+                        type="submit" 
+                        class="w-full bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-blue-50 font-bold py-4 text-lg shadow-lg transition-all duration-300 ease-in-out transform hover:scale-[1.02] rounded-md"
+                    >
+                        Candidatar-se ao Processo Seletivo
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData.entries());
+            
+            if (
+                data.faturamento === 'Menos de R$10 mil' ||
+                data.investimento === 'Menos de R$1.000'
+            ) {
+                e.preventDefault();
+                alert('Agradecemos seu interesse. Entraremos em contato quando abrirmos novas turmas mais adequadas ao seu momento atual.');
+                return;
+            }
+        });
+    </script>
+</body>
+</html>
